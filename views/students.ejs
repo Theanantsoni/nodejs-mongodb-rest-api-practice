@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>----- : Display Data : -----</h1>
+        <table border="1">
+            <tr>
+
+                <td>_id</td>
+                <td>Name: </td>
+                <td>Age: </td>
+                <td>Email Id: </td>
+                <td colspan="2">Operation</td>
+                
+            </tr>
+
+            <% students.forEach(students=>
+                {
+            %>
+                    <tr>
+                        <td>
+                            <%= 
+                                students._id 
+                            %>
+                        </td>
+                        <td>
+                            <%= 
+                                students.name 
+                            %>
+                        </td>
+                        <td>
+                            <%= 
+                                students.age 
+                            %>
+                        </td>
+                        <td>
+                            <%= 
+                                students.email 
+                            %>
+                        </td>
+                        <td>
+                            <a href="/ui/delete/<%= students._id %>">
+                                Delete
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/ui/update-students/<%= students._id %>">
+                                Update
+                            </a>
+                        </td>
+                    </tr>
+            <% 
+                }) 
+            %>
+            
+        </table>
+    </center>
+</body>
+</html>

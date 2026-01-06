@@ -1,0 +1,138 @@
+PROJECT NAME:
+
+nodejs-mongodb-rest-api-practice
+
+--------------------------------------------------
+
+PROJECT SUMMARY:
+
+Practice-based learning project for understanding MongoDB integration with Node.js
+and Express.js using a clean, concept-wise folder structure.
+
+--------------------------------------------------
+
+PROJECT DESCRIPTION:
+
+This is a Node.js and Express.js practice project created to learn MongoDB
+integration step by step.
+Each MongoDB-related concept is organized in a separate folder with its own
+app.js file.
+Only one concept is executed at a time by importing it in index.js.
+This approach helps in learning database operations clearly without mixing
+multiple concepts in a single file.
+
+--------------------------------------------------
+
+CONCEPTS COVERED:
+
+- Connect MongoDB with NodeJS
+- Display data from MongoDB on UI using EJS
+- Create API with MongoDB and Node.js
+- Save data using POST Form
+- Save data using POST REST API
+- Delete data using REST API
+- Populate, Fetch, Update & Delete data with MongoDB
+
+--------------------------------------------------
+
+CONCEPT FOLDER MAPPING:
+
+Connect MongoDB						        -> 01-connect-mongodb/app.js
+
+Display Data on UI (EJS)					-> 02-display-ui-ejs/app.js
+
+Create API with MongoDB					    -> 03-make-api/app.js
+
+Save Data using POST Form				    -> 04-post-form-save/app.js
+
+Save Data using POST REST API			    -> 05-post-rest-api/app.js
+
+Delete Data using REST API				    -> 06-delete-rest-api/app.js
+
+Populate, Fetch, Update & Delete (CRUD)		-> 07-populate-crud-mongodb/app.js
+
+--------------------------------------------------
+
+PROJECT STRUCTURE NOTE:
+- Each concept has its own folder
+- Each folder contains a single app.js file
+- Only ONE concept should run at a time
+- index.js acts as the concept runner
+
+--------------------------------------------------
+
+NODE_MODULES NOTE:
+The node_modules folder contains all required dependencies for this project.
+This folder is not included in the GitHub repository.
+It is generated automatically after installing packages.
+
+Command to install node_modules:
+npm install
+
+--------------------------------------------------
+
+REQUIRED PACKAGES & COMMANDS:
+
+1) Express.js
+Used to create server, routes, and handle HTTP requests.
+Command:
+npm install express
+
+2) MongoDB (Official Driver)
+Used to connect Node.js with MongoDB database and perform CRUD operations.
+Command:
+npm install mongodb
+
+3) EJS (Template Engine)
+Used to display MongoDB data dynamically on the UI.
+Command:
+npm install ejs
+
+4) Nodemon (Development Dependency)
+Used to automatically restart the server on file changes.
+Command:
+npm install nodemon --save-dev
+
+Install all packages together:
+npm install express mongodb ejs
+npm install nodemon --save-dev
+
+--------------------------------------------------
+
+HOW TO RUN THE PROJECT:
+
+Run with Node.js:
+node index.js
+
+Run with Nodemon (Recommended):
+npx nodemon index.js
+
+--------------------------------------------------
+
+IMPORTANT NOTES:
+- Only ONE app.js file should be active at a time
+- Uncomment the required concept import in index.js
+- Keep all other imports commented to avoid port conflicts
+- MongoDB must be running before starting the project
+- Field names in MongoDB should be consistent for proper UI display
+
+--------------------------------------------------
+
+TECHNOLOGIES USED:
+- Node.js
+- Express.js
+- MongoDB
+- EJS
+- JavaScript (ES Modules)
+
+--------------------------------------------------
+
+PROJECT PURPOSE:
+- Learn MongoDB integration with Node.js
+- Understand REST APIs with database operations
+- Practice CRUD operations using real database
+- Build strong backend fundamentals
+- Maintain a clean, modular, and revision-friendly structure
+- Prepare for real-world backend and MERN stack projects
+
+--------------------------------------------------

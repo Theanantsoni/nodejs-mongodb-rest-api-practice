@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-mongodb-rest-api-practice",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to connect MongoDB with Node.js and perform complete CRUD operations using Express. It includes creating REST APIs, handling POST form and API requests, deleting records, and displaying MongoDB data on the UI using EJS templates.",
+  "author": "Anant Soni",
+  "license": "ISC",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "mongodb": "^7.0.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11"
+  }
+}
